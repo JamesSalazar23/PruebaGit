@@ -1,21 +1,67 @@
+:root{
+    /*pseudoelementos  para crear valiables 
+    personalizadas(Custom Properties)*/
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #4631b1;
+    --secundario: rgba(255,193,8,1);
+    --gris: #777777;
+}
+
 html{
     font-size: 62.5%;
 }
 body{
     font-size: 16px;
+    font-family: "Krub";
 }
 
 .titulo{
     text-align: center;
     font-size: 3.8rem;
-    color: blue;
+    color: var(--primario);
+    font-family: 'Times New Roman', Times, serif;
 }
 
-span{
+.titulo span{
     font-size: 2rem;
-    color: blueviolet;
+    color: var(--secundario);
 }
 
-h2 span{
-    font-size: 1rem;
+.contenedor{
+    width: 120rem;
+    margin-top: 0rem;
+    margin-right: auto;
+    margin-bottom: 0rem;
+    margin-left: auto;
 }
+
+.nav-bg{
+    background-color: var(--secundario);
+}
+
+.nav-principal{
+    padding: 1rem;
+}
+
+.nav-principal a{
+    display: inline;
+    color: var(--blanco);
+    text-decoration: none;
+}
+/* .contenedor{
+    width: 120rem;
+    margin-top: 0rem;
+    margin-left: auto;
+    margin-bottom: 0rem;
+    margin-right: auto;
+}
+
+.nav_principal{
+    background-color: var(--secundario);
+}
+
+
+.nav_principal{
+    display: flex;   
+} */
